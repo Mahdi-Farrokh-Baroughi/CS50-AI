@@ -53,3 +53,21 @@ class Greedy_bestFirstSearch_frontier(StackFrontier):
                 remove_node.append(node)
             self.frontier.remove(remove_node[min_Manhattan_distance.index(min(min_Manhattan_distance))])
             return remove_node[min_Manhattan_distance.index(min(min_Manhattan_distance))]
+
+ class A_starSearch_fronntier(StackFrontier):
+
+    def remove(self, maze_goal):
+        if self.empty():
+            raise Exception("empty frontier")
+        else:
+            min_Manhattan_distance_and_cost = []
+            remove_node = []
+            for node in self.frontier:
+                i, j = node.state
+                m, n = maze_goal
+                Manhattan_distance = abs(m-i) + abs(n-j)
+                value = Manhattan_distance + node.cost
+                min_Manhattan_distance_and_cost.append(value)
+                remove_node.append(node)
+            self.frontier.remove(remove_node[min_Manhattan_distance_and_cost.index(min(min_Manhattan_distance_and_cost))])
+            return remove_node[min_Manhattan_distance_and_cost.index(min(min_Manhattan_distance_and_cost))]       
