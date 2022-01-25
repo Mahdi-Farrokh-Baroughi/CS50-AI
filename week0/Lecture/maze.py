@@ -1,5 +1,5 @@
 import sys
-from util import Node, StackFrontier, QueueFrontier, Greedy_bestFirstSearch_frontier, A_starSearch_fronntier
+from util import Node, StackFrontier, QueueFrontier, Greedy_bestFirstSearch_frontier
 
 class Maze():
 
@@ -122,7 +122,7 @@ class Maze():
             # Add neighbors to frontier
             for action, state in self.neighbors(node.state):
                 if not frontier.contains_state(state) and state not in self.explored:
-                    child = Node(state=state, parent=node, action=action, cost=None)
+                    child = Node(state=state, parent=node, action=action)
                     frontier.add(child)
 
 
