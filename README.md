@@ -31,3 +31,15 @@
      - Lecture 6
      - Project 6a : Parser
      - Project 6b : Questions
+
+## Includes:
+  - ### Python codes for each of the algorithms taught each week
+  - ### Projects solutions
+
+## Warning!
+> ***Before visiting this repo files, please read about [CS50's Academic Honesty rules](https://cs50.harvard.edu/college/2021/fall/syllabus/#academic-honesty)***
+
+## Course info:
+* __Name:__ CS50's Introduction to Artificial Intelligence with Python
+* __University:__ Harvard University
+* __WWW:__ https://cs50.harvard.edu/ai
