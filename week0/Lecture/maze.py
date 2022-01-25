@@ -122,7 +122,7 @@ class Maze():
             # Add neighbors to frontier
             for action, state in self.neighbors(node.state):
                 if not frontier.contains_state(state) and state not in self.explored:
-                    child = Node(state=state, parent=node, action=action, cost=None) # Pay attention! We assign node to child.parent, we don't assign node.parent to child.parent
+                    child = Node(state=state, parent=node, action=action, cost=None)
                     frontier.add(child)
 
 
