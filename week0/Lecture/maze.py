@@ -1,5 +1,5 @@
 import sys
-from util import Node, StackFrontier, QueueFrontier, Greedy_bestFirstSearch_frontier
+from util import Node, StackFrontier, QueueFrontier, Greedy_bestFirstSearch_frontier, A_starSearch_frontier
 
 class Maze():
 
